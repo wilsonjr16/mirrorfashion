@@ -1,0 +1,391 @@
+body {
+    color: #333333;
+    font-family: 'PT sans', sans-serif;
+}
+
+.grid{
+    margin: 0 auto;
+    width: 940px;
+}
+
+
+/*---------------------------------------------------------
+--------------------inicio do cabeçalho--------------------
+---------------------------------------------------------*/
+
+header{
+    position: relative;
+}
+.sacola {
+    background: url(../img/sacola.png) no-repeat top right;
+    font-size: 14px;
+    padding-top: 8px;
+    padding-right: 35px;
+    text-align: right;
+    width: 140px;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+
+/*-- organização do menu --*/
+.menu-opcoes {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul{
+    font-size: 15px;
+}
+
+.menu-opcoes a{
+    color: #003366;
+    text-decoration: none;
+}
+
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+
+.menu-opcoes a:active {
+    color: #867dc6; 
+}
+
+.option-list {
+    display: inline;
+    margin-left: 20px;
+}
+
+/*----------------------------------------------
+--------------------fim do cabeçalho------------
+----------------------------------------------*/
+
+
+
+/*- - - - - - - - - - - - - - - - - - - - - - -
+- estilização da barra de busca e menu lateral -
+- - - - - - - - - - - - - - - - - - - - - - - -*/
+ 
+.busca, .menu-departamentos {
+    background-color: #dcdcdc;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px; 
+    width: 230px;
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2{
+    margin: 10px;
+}
+
+.busca,
+.menu-departamentos {
+    float: left;
+}
+
+.busca input {
+    vertical-align: middle;
+}
+
+.busca input[type=search] {
+    width: 170px;
+    border-radius: 8px;
+}
+
+.menu-departamentos {
+    clear: left;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.sub-menu-dep {
+    display: none;
+}
+
+.sub-menu-dep li {
+    background-color: #dcdcdc;
+}
+
+.sub-menu-dep a:before {
+    content: '\272A';
+    padding-right: 3px;
+}
+
+.list-item-dep:hover .sub-menu-dep {
+    display: block;
+}
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - - -fim da barra de busca e menu de lateral - - - - -
+- - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+/*- - - - - - -banner de destaque - - - - - - - -*/
+
+.destaque {
+    margin-top: 10px;
+    position: relative;
+}
+
+.destaque img {
+    margin-left: 10px;
+}
+
+.pause,
+.play {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.pause {
+    border-left: 10px solid #900;
+    border-right: 10px solid #900;
+    height: 30px;
+    width: 5px;
+}
+
+.play {
+    border-left: 25px solid #900;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+}
+
+
+/*-------------------------------------------------------
+_________________________________________________________
+painel de novidades e mais vendidos
+---------------------------------------------------------
+--------------------------------------------------------*/
+
+
+.painel {
+    margin: 10px 0;
+    padding: 10px;
+    width: 445px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.painel h2 {
+    font-family: 'Bad Script', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px #fff;
+}
+
+.painel h2:before {
+  content: '\2756';
+  padding-right: 5px;
+  opacity: 0.4;
+}
+
+.painel a {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.painel li {
+    display: inline-block;
+    vertical-align: top;
+    width: 140px;
+    margin: 2px;
+    padding-bottom: 10px;
+    
+    transition: 0.7s ease-out;
+    -o-transition: 0.7s ease-out;
+    -moz-transition: 0.7s ease-out;
+    -ms-transition: 0.7s ease-out;
+    -webkit-transition: 0.7s ease-out;
+}
+
+.painel li:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px #333;
+    
+    transition: box-shadow 0.7s ease-in;
+    -o-transition: box-shadow 0.7s ease-in;
+    -moz-transition: box-shadow 0.7s ease-in;
+    -ms-transition: box-shadow 0.7s ease-in;
+    -webkit-transition: box-shadow 0.7s ease-in;
+    
+    transform: scale(1.2) rotate(-5deg);
+    -o-transform: scale(1.2) rotate(-5deg);
+    -moz-transform: scale(1.2) rotate(-5deg);
+    -ms-transform: scale(1.2) rotate(-5deg);
+    -webkit-transform: scale(1.2) rotate(-5deg);
+}
+.painel li:nth-child(2n):hover {
+    transform: scale(1.2) rotate(5deg);
+    -o-transform: scale(1.2) rotate(5deg);
+    -moz-transform: scale(1.2) rotate(5deg);
+    -ms-transform: scale(1.2) rotate(5deg);
+    -webkit-transform: scale(1.2) rotate(5deg);
+}
+
+.painel button {
+    
+    display: none;
+    color: #fff;
+    position: relative;
+    margin-bottom: 10px;
+    
+/* posicionamento */
+    float: right;
+    margin-right: 10px;
+    padding: 10px;
+    
+/*estilo*/
+    background-color: #333;
+    border: 0;
+    border-radius: 4px;
+    box-shadow: 1px 1px 3px rgba(30, 30, 30, .5);
+    color: #fff;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 1px 0 1px #000;
+    
+/*animação*/
+    transition: 0.3s;
+}
+
+.painel button:hover {
+    background-color: #393939;
+    box-shadow: 1px 0 20px rgba(200, 200, 120, .9);
+}
+
+.painel button:after {
+    
+/*elemento vazio*/
+    content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    
+/*triangulo*/
+    border-top: 10px solid #333;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+/*posicionamento*/
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    
+/*animação*/
+    transition: 0.3s;
+}
+
+.painel button:hover:after {
+    border-top-color: #393939;
+}
+
+.painel-compacto li:nth-child(n+7) {
+    display: none;
+}
+
+.painel-compacto button {
+    display: block;
+}
+
+.novidades{
+    float: left;
+    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc, #bebef4);
+    -o- background: linear-gradient(#f5dcdc, #bebef4);
+    -ms- background: linear-gradient(#f5dcdc, #bebef4);
+    -moz- background: linear-gradient(#f5dcdc, #bebef4);
+    -webkit- background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos{
+    float: right;
+    background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5, #f4bebe);
+    -o-background: linear-gradient(#dcdcf5, #f4bebe);
+    -ms- background: linear-gradient(#dcdcf5, #f4bebe);
+    -moz- background: linear-gradient(#dcdcf5, #f4bebe);
+    -webkit- background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+/*-------------------------------------------------
+___________________________________________________
+    fim do painel de novidades e mais vendidos
+---------------------------------------------------
+-------------------------------------------------*/
+
+
+/*-------------------------------------
+        estilização do rodapé
+-------------------------------------*/
+
+footer {
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+}
+
+footer .grid {
+    position: relative;
+    padding: 20px 0;
+}
+
+.social {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -16px;
+}
+
+.social a {
+    /*tamanho da imagem*/
+    height: 32px;
+    width: 32px;
+    
+    /*image replacement*/
+    display: block;
+    text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+    background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+    background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus"] {
+    background-image: url(../img/googleplus.png);
+}
+
+.social li {
+    float: left;
+    margin-left: 25px;
+}
+
+/*--------------------------------------
+              fim do rodapé
+---------------------------------------*/

@@ -1,0 +1,81 @@
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+                     Estilização da pagina SOBRE 
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
+    
+    
+.page-sobre {
+    font-family: "arial", "verdana", sans-serif;
+}
+
+.page-sobre p {
+    padding: 0 45px;
+    margin: 15px 0;
+    text-indent: 15px;
+    line-height: 22px;
+    word-spacing: 2px;
+}
+
+.text-featured {
+    font-weight: bold;
+}
+
+.sobre {
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 22px;
+    background-image: url(../img/sobre-background.jpg);
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.historia, .diferenciais {
+    border-bottom: 2px solid #333333;
+    margin-top: 30px;
+}
+
+.list-dif {
+    margin: 20px 0 40px;
+}
+
+.list-dif li {
+    padding: 0 45px;
+    list-style: disc;
+    list-style-position: inside;
+    margin-top: 10px;
+}
+
+#centro-distribuicao {
+    width: 550px;
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+#centro-distribuicao figcaption, #familia-pelho figcaption {
+    font-style: italic;
+    margin-top: 10px;
+}
+
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+    background-color: #f2eded;
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 15px;
+    margin: 30px;
+}
+
+/*----------------------------------------------------------------------
+------------------------------------------------------------------------
+
+                  Fim da Estilização da pagina SOBRE 
+
+------------------------------------------------------------------------
+----------------------------------------------------------------------*/
